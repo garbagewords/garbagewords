@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garbage Words</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Merriweather', serif;
+      background-color: #f7f5f2; /* light pastel shade */
+      color: #333;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      flex: 1;
+      max-width: 300px;
+      padding: 2rem;
+      background-color: #fafafa;
+      border-right: 1px solid #e0e0e0;
+    }
+    .sidebar h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: 2rem;
+      margin: 0 0 1rem 0;
+    }
+    .sidebar p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #666;
+      white-space: pre-line;
+    }
+    .content {
+      flex: 3;
+      padding: 2rem;
+    }
+    .post {
+      margin-bottom: 3rem;
+    }
+    .post-date {
+      font-size: 0.8rem;
+      color: #999;
+      margin-bottom: 0.5rem;
+    }
+    .post-text {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Garbage Words</h1>
+    <p>i write whatever i have been feeling, like a diary entry.
+why am i doing this here? so that i get the feeling of sharing what i feel with someone without actually sharing.</p>
+  </div>
+
+  <div class="content">
+    <div class="post">
+      <div class="post-date">September 4, 2025</div>
+      <div class="post-text">
+        Today I started my blog. It feels like writing into the void, but at least the void listens.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-date">September 3, 2025</div>
+      <div class="post-text">
+        Another day of thoughts too heavy to keep only in my head.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
