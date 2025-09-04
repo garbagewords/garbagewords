@@ -12,32 +12,39 @@
       background-color: #f7f5f2; /* light pastel shade */
       color: #333;
       display: flex;
+      flex-direction: column;
       min-height: 100vh;
     }
-    .sidebar {
-      flex: 1;
-      max-width: 300px;
-      padding: 2rem;
+    header {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid #e0e0e0;
       background-color: #fafafa;
-      border-right: 1px solid #e0e0e0;
+      text-align: center;
     }
-    .sidebar h1 {
+    header h1 {
       font-family: 'Inter', sans-serif;
       font-size: 2rem;
-      margin: 0 0 1rem 0;
+      margin: 0 0 0.5rem 0;
     }
-    .sidebar p {
-      font-size: 0.9rem;
-      line-height: 1.6;
+    header p {
+      font-size: 0.95rem;
+      line-height: 1.4;
       color: #666;
-      white-space: pre-line;
+      margin: 0;
     }
-    .content {
-      flex: 3;
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
       padding: 2rem;
+      flex: 1;
     }
     .post {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     }
     .post-date {
       font-size: 0.8rem;
@@ -51,13 +58,13 @@
   </style>
 </head>
 <body>
-  <div class="sidebar">
+  <header>
     <h1>Garbage Words</h1>
-    <p>i write whatever i have been feeling, like a diary entry.
-why am i doing this here? so that i get the feeling of sharing what i feel with someone without actually sharing.</p>
-  </div>
+    <p>i write whatever i have been feeling, like a diary entry.<br>
+    why am i doing this here? so that i get the feeling of sharing what i feel with someone without actually sharing.</p>
+  </header>
 
-  <div class="content">
+  <main>
     <div class="post">
       <div class="post-date">September 4, 2025</div>
       <div class="post-text">
@@ -71,6 +78,21 @@ why am i doing this here? so that i get the feeling of sharing what i feel with 
         Another day of thoughts too heavy to keep only in my head.
       </div>
     </div>
-  </div>
+
+    <div class="post">
+      <div class="post-date">September 2, 2025</div>
+      <div class="post-text">
+        A random thought that lingers longer than it should.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-date">September 1, 2025</div>
+      <div class="post-text">
+        Some days, silence speaks louder than anything else.
+      </div>
+    </div>
+  </main>
 </body>
 </html>
+
